@@ -1,0 +1,16 @@
+{
+    "name":"Data_classification",
+    "Data_classification":"rulename",
+    "rulename":"expr",
+    "expr":"simple \" in \" text | complex \" is \" finalparse",
+    "simple": "basic \" is \" comoperator number",
+    "complex":  "aggregator \"of\"  combined \" and\" combined",
+    "combined" : "basic | complex",
+    "aggregator" : "\" maximum \" | \" minimum \" | \" sum \"",
+    "comoperator" : "\"equalto \" | \"notequalto \" | \"greaterthan \" | \"greaterthanequalto \" | \"lessthan \" | \"lessthanequalto \"",
+    "text" : "alnum+ (\" \" text)*",
+    "attribute" : "letter+ | number",
+    "number" : "digit+",
+    "finalparse" : "comoperator number \" in \" text"
+    
+}
