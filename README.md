@@ -1,5 +1,8 @@
 # Real-time data classification API
 Build a data classification API using WebSockets where signup and login endpoints are created and authenticated, mongo DB is used for data storage.
+Signup endpoints take user details- username, email, and password and return a token used to log in.
+User details are then stored in the database.
+The login endpoint takes the expression as input with a valid token as header and returns the expression's result.
 ## How to run
 node server.js
 ## Unit Testing
